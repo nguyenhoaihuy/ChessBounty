@@ -1,0 +1,30 @@
+0	0	0	0	0	0	0	0	
+0	0	0	0	0	0	0	0	
+0	0	0	0	0	0	0	0	
+0	0	0	0	0	0	0	0	
+0	0	0	21	0	0	0	0	
+0	0	0	0	0	0	11	0	
+0	0	0	0	0	0	0	0	
+0	0	0	0	0	0	0	12	
+WH	e8
+BK	d6
+WK	f7
+BK	d7
+WH	e6
+BK	d8
+WH	e7
+BK	c8
+WK	e8
+BK	b8
+WH	d7
+BK	c8
+WK	e7
+BK	b8
+WK	d8
+BK	a8
+WH	c7
+BK	b8
+WK	d7
+BK	a8
+WK	c8
+BK	a7
