@@ -10,6 +10,7 @@ class Board():
 		self.white = White()
 		self.black = Black()
 		self.status = self.initBoard()
+		print(self.status)
 		# while (not self.checkPosition(self.status)):
 		# 	self.status = self.initBoard()
 		self.initOutPut()
@@ -41,13 +42,14 @@ class Board():
 
 	# 1 -> White King, 2 -> White Rook, 3 -> Black King
 	def randomPositions(self):
-		randomList = [46, 63, 35]
+		# randomList = [46, 63, 35]
+		randomList = []
 		count = 0
-		# while (count < 3):	
-		# 	ran = random.randint(0,63)
-		# 	if self.checkRandomList(randomList, ran):
-		# 		randomList.append(ran)
-		# 		count += 1
+		while (count < 3):	
+			ran = random.randint(0,63)
+			if self.checkRandomList(randomList, ran):
+				randomList.append(ran)
+				count += 1
 		return randomList
 
 	# check position duplicate
@@ -134,11 +136,12 @@ class Board():
 
 	# Run the match
 	def play(self):
-		# while (true):
-		for i in range(0,12):
+		while (True):
+		# for i in range(0,12):
 			# print(self.status)
 			whiteMove = copy.deepcopy(self.status)
-			self.white.go(whiteMove,i)
+			# self.white.go(whiteMove,i)
+			self.white.go(whiteMove)
 			if self.checkMove(self.status, whiteMove):
 				self.writeMoves(self.status, whiteMove)
 				self.status = whiteMove

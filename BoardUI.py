@@ -1,7 +1,8 @@
 import pygame
 
 class BoardUI():
-	def __init__(self):
+	def __init__(self, output):
+		self.output = output
 		self.boardMap = {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7}
 		self.pointer = 0
 		display_width = 620
@@ -26,7 +27,7 @@ class BoardUI():
 	def readBoard(self):
 		result = []
 		moves = []
-		with open("output.txt", "r") as f:
+		with open(self.output, "r") as f:
 			lines = f.readlines()
 			for i in range(0,8):
 				line = lines[i].split("\t")
