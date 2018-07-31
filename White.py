@@ -1,6 +1,6 @@
 class White():
 
-	def _init_(self):
+	def __init__(self):
 		self.count = 0
 
 	def go(self, movedList):
